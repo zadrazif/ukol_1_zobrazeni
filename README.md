@@ -1,2 +1,2 @@
-# ukol_1_zobrazeni
+# Dokumentace k úkolu 1 
 Ukol_1
