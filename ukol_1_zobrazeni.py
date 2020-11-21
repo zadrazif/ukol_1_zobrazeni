@@ -5,7 +5,7 @@ from turtle import setpos, right, left, penup, pendown, circle, speed, fd, exito
 def postel(polomer_Zeme, meritko, km_na_px):
     radius1 = polomer_Zeme*math.radians(10)/km_na_px
     radius2 = radius1
-    speed(100)
+    speed(10)
     penup()
     right(90)
     fd(radius1)
