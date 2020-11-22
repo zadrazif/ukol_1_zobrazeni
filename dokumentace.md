@@ -1,9 +1,9 @@
-# Dokumentace k úkolu 1
+# Dokumentace k domácímu úkolu 1
 ### Úvod
-Tento soubor slouží jako uživatelská dokumentace, která uživateli programu popíše jeho strukturu, 
-funkce, principy a vysvětlí, jak s ním vhodně zacházet. Jedná se o užitečnou pomůcku při 
-počítání a kreslení kartografických zobrazení. Zdrojový kód byl vytvořen v rámci tvorby 
-prvního úkolu na cvičení z předmětu Úvod do programování.
+>Tento soubor slouží jako uživatelská dokumentace, která uživateli programu popíše jeho strukturu, 
+>funkce, principy a vysvětlí, jak s ním vhodně zacházet. Jedná se o užitečnou pomůcku při 
+>počítání a kreslení kartografických zobrazení. Zdrojový kód byl vytvořen v rámci tvorby 
+>prvního úkolu na cvičení z předmětu Úvod do programování.
 ### Základní stavba programu
 Celý zdrojový kód sestává ze sedmi funkcí a tou hlavní je ta zcela na konci. Tato funkce je 
 umístěna na řádku 131 až 171. Jedná se o funkci do níž uživatel postupně vkládá jednotlivé
@@ -46,9 +46,7 @@ K tomu nám pomáhají již zmíněné funkce *left* a *right*.
 ### Závěr
 Pevně věřím, že program v sobě neobsahuje žádné hrubé chyby a v rámci možností splní požadované účely 
 a ulehčí tak uživateli práci při tvorbě kartografických sítí. 
->
->
->
+
 Filip Zadražil, 3. BGEKA
 
 
