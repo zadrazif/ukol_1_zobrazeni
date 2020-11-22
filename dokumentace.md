@@ -46,9 +46,10 @@ K tomu nám pomáhají již zmíněné funkce *left* a *right*.
 ### Závěr
 Pevně věřím, že program v sobě neobsahuje žádné hrubé chyby a v rámci možností splní požadované účely 
 a ulehčí tak uživateli práci při tvorbě kartografických sítí. 
-
------:|
-Filip Zadražil
+>
+>
+>
+Filip Zadražil, 3. BGEKA
 
 
 
