@@ -10,7 +10,7 @@ postupně vkládá jednotlivé vstupy (input), se kterými následně program pr
 jsou: zkratka vybraného zobrazení, zeměpisná šířka a délka (ve stupních), celočíslené měřítko 
 a volitelný poloměr Země. Zároveň jsou inputy ošetřeny proti chybovým hláškám a to pomocí podmínek
 (if, elif, else). Pokud je některá ze zadaných podmínek porušena, program vypíše předepsanou 
-chybovou hlášku a souběžně s tím program ukončí. Rovněž jsou zde umístěny i podmínky, které 
+chybovou hlášku a souběžně s tím program ukončí. Rovněž jsou zde umístěny i podmínky, které 
 zajišťují vykreslení či vypsání dalších funkcí, v závislosti právě na zvoleném kartografickém 
 zobrazení.
 
