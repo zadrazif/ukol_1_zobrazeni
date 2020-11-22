@@ -1,9 +1,9 @@
 # Dokumentace k domácímu úkolu 1
 ### Úvod
->Tento soubor slouží jako uživatelská dokumentace, která uživateli programu popíše jeho strukturu, 
->funkce, principy a vysvětlí, jak s ním vhodně zacházet. Jedná se o užitečnou pomůcku při 
->počítání a kreslení kartografických zobrazení. Zdrojový kód byl vytvořen v rámci tvorby 
->prvního úkolu na cvičení z předmětu Úvod do programování.
+Tento soubor slouží jako uživatelská dokumentace, která uživateli programu popíše jeho strukturu, 
+funkce, principy a vysvětlí, jak s ním vhodně zacházet. Jedná se o užitečnou pomůcku při 
+počítání a kreslení kartografických zobrazení. Zdrojový kód byl vytvořen v rámci tvorby 
+prvního úkolu na cvičení z předmětu Úvod do programování.
 ### Základní stavba programu
 Celý zdrojový kód sestává ze sedmi funkcí a tou hlavní je ta zcela na konci. Tato funkce je 
 umístěna na řádku 131 až 171. Jedná se o funkci do níž uživatel postupně vkládá jednotlivé
@@ -13,11 +13,11 @@ Země. Některé tyto proměnné jsou ihned po vložení převedeny ze stringu d
 aby bylo možné je nadále využívat např. při výpočtu dalších proměnných. Některé inputy 
 jsou zároveň ošetřeny proti nežádoucím hodnotám a to pomocí podmínek (*if, elif, else*). 
 Pokud je některá ze zadaných podmínek porušena, program vypíše předepsanou chybovou hlášku
-a souběžně s tím program ukončí (*exit()*). Rovněž jsou zde umístěny i podmínky, které zajišťují
-vykreslení či vypsání dalších funkcí, v závislosti právě na zvoleném kartografickém zobrazení 
-a důležitá proměnná *km_na_px*, která zajišťuje převod kilometrů na pixely, s nimiž pak program
-operuje při kreslení. Pro lepší přehlednost a pochopení programu jsou všechny funkce opatřeny 
-komentářem, který odhaluje způsob využití dané funkce a začíná vždy mřížkou (*#*). 
+a souběžně s tím program ukončí (*exit("text")*). Rovněž jsou zde umístěny i podmínky, které 
+zajišťují vykreslení či vypsání dalších funkcí, v závislosti právě na zvoleném kartografickém
+zobrazení a důležitá proměnná *km_na_px*, která zajišťuje převod kilometrů na pixely, s nimiž
+pak program operuje při kreslení. Pro lepší přehlednost a pochopení programu jsou všechny 
+funkce opatřeny komentářem, který odhaluje způsob využití dané funkce a začíná vždy mřížkou (*#*). 
 ### Převod souřadnic na milimetry v mapě
 Jednou ze stěžejních funkcí definovaných v programu je schopnost převádět vložené hodnoty souřadnic
 na milimetry, a to pro všechna tři volitelná zobrazení (viz řádky 85 až 128). Souřadnice bodů pro
