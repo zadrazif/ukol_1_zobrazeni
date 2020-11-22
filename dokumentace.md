@@ -39,7 +39,7 @@ jako u right ale doprava), *exitonclick* (po kliknutí na vykreslenou síť ukon
 tužky), *pendown* (položení tužky), *circle* (vykreslí kruh o zadaném radiusu) a *speed* (určuje rychlost 
 vykreslování sítě. Základem úspěchu vykreslení sítě je především *for cyklus* neboli funkce, která v počtu
 nastavených opakování kreslí zadané údaje. V tomto případě byla nejvíce využita při tvorbě kružnic (funkce 
-*circle*, resp. 3/4 kružnic (rovnoběžky) a poledníků a rovnoběžek v Marinově zobrazení. Při tvorbě kódu
+*circle*, resp. 3/4 kružnic (rovnoběžky) a poledníků a rovnoběžek v Marinově zobrazení. Při tvorbě kódu
 je také velmi důležité dát si pozor na směr šipky, která kreslí linie. Například i přes použití *setpos*,
 *pendown* či *penup*, zůstavá vektor natočení šipky stále stejný a je potřeba s ním otáčet tak, jak je potřeba.
 K tomu nám pomáhají již zmíněné funkce *left* a *right*.
