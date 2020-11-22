@@ -21,7 +21,7 @@ funkce opatřeny komentářem, který odhaluje způsob využití dané funkce a 
 ### Převod souřadnic na milimetry v mapě
 Jednou ze stěžejních funkcí definovaných v programu je schopnost převádět vložené hodnoty souřadnic
 na milimetry, a to pro všechna tři volitelná zobrazení (viz řádky 85 až 128). Souřadnice bodů pro
-Postelovo a Lambertovo kuželové zobrazení jsou vypsány v polární soustavě a pro Marinovo v 
+Postelovo a Lambertovo kuželové zobrazení jsou vypsány v polární soustavě a pro Marinovo v 
 soustavě kartézské. Uživatelem nastavené parametry jsou zde využity pro přepočet vstupních hodnot
 na hodnoty v mm, které prozrazují, kam kreslit jednotlivé body v případě, že bychom se je 
 rozhodli přenést např. na papír. Výstupem z funkce je *print()*, který výsledné hodnoty uživateli
@@ -32,7 +32,7 @@ stupně na radiány.
 ### Želví grafika
 Velmi důležitou součástí zdrojového kódu jsou totiž i funkce, které nám zajistí vykreslení zeměpisných
 sítí v želví grafice pro jakékoli ze tří nabízených zobrazení. Aby se něco takového mohlo uskutečnit, 
-je potřeba zavolat si do programu hned na začátku mimo *math* i modul *turtle* a importovat z něj 
+je potřeba zavolat si do programu hned na začátku mimo *math* i modul *turtle* a importovat z něj 
 všechny potřebné funkce. V tomto případě se jednalo o *setpos* (přesunutí na zadanou pozici), *fd* 
 (*forward*; pohyb vpřed), *right* (pootočí "tužku" o zvolený počet stupňů doprava) , *left* (stejné chování
 jako u right ale doprava), *exitonclick* (po kliknutí na vykreslenou síť ukončí program), *penup* (zvednutí
@@ -42,7 +42,7 @@ nastavených opakování kreslí zadané údaje. V tomto případě byla nejvíc
 *circle*, resp. 3/4 kružnic (rovnoběžky) a poledníků a rovnoběžek v Marinově zobrazení. Při tvorbě kódu
 je také velmi důležité dát si pozor na směr šipky, která kreslí linie. Například i přes použití *setpos*,
 *pendown* či *penup*, zůstavá vektor natočení šipky stále stejný a je potřeba s ním otáčet tak, jak je potřeba.
-K tomu nám pomáhají již zmíněné funkce *left* a *right*.
+K tomu nám pomáhají již zmíněné funkce *left* a *right*.
 ### Závěr
 Pevně věřím, že program v sobě neobsahuje žádné hrubé chyby a v rámci možností splní požadované účely 
 a ulehčí tak uživateli práci při tvorbě kartografických sítí. 
