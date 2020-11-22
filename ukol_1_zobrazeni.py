@@ -114,11 +114,6 @@ def souradnice_bodu_v_mm_lambert(sirka, delka, polomer_Zeme, meritko, km_na_px):
     else:
         exit("Byla zadána neplatná zeměpisná délka")
 
-    if sirka >= -90 and sirka <= 90:
-        r = (2*polomer_Zeme*math.sin(math.radians(90-sirka)/2)/math.cos(math.radians(30))/km_na_px)*0.3
-    else:
-        exit("Byla zadána neplatná zeměpisná šířka")
-    print("Souřadnice bodu místa v mapě jsou od středu pod úhlem", uhel, "° a ve vzdálenosti", r, "mm")
 
 #Funkce, která umožňuje zadávání vstupních hodnot vybraných zobrazení
 def vyber_zobrazeni():
