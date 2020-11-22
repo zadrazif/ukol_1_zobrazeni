@@ -5,7 +5,7 @@ from turtle import setpos, right, left, penup, pendown, circle, speed, fd, exito
 def postel(polomer_Zeme, meritko, km_na_px):
     radius1 = polomer_Zeme*math.radians(10)/km_na_px
     radius2 = radius1
-    speed(10)
+    speed(0)
     penup()
     right(90)
     fd(radius1)
@@ -34,7 +34,7 @@ def marin(polomer_Zeme, meritko, km_na_px):
     x0 = -math.radians(180)*polomer_Zeme/km_na_px
     y0 = math.radians(90)*polomer_Zeme/km_na_px
     xy_roz = polomer_Zeme*math.radians(10)/km_na_px
-    speed(100)
+    speed(0)
     penup()
     setpos(x0,y0)
     pendown()
@@ -61,7 +61,7 @@ def marin(polomer_Zeme, meritko, km_na_px):
 def lambert(polomer_Zeme, meritko, km_na_px):
     delta = 10
     radius1 = 2*polomer_Zeme*math.sin(math.radians(delta)/2)/math.cos(math.radians(30))/km_na_px
-    speed(100)
+    speed(0)
     left(45)
     for i in range(37):
         fd(2*polomer_Zeme*math.sin(math.radians(180)/2)/math.cos(math.radians(30))/km_na_px)
@@ -99,7 +99,14 @@ def souradnice_bodu_v_mm_postel(sirka, delka, polomer_Zeme, meritko, km_na_px):
             r = ((polomer_Zeme*math.radians(90-sirka)/km_na_px)*0.3)
     print("Zvolené souřadnice se v mapě od středu nachází pod úhlem", uhel, "° a ve vzdálenosti", r, "mm")
 
-#Funkce, která vypočítá souřadnice zvoleného bodu na mapě v Lambertově zobrazení
+#Funkce, která vypočítá souřadnice zvoleného bodu na mapě v Marinově zobrazení
+def souradnice_bodu_v_mm_marin(sirka, delka, polomer_Zeme, meritko, km_na_px):
+    x = math.radians(delka)*polomer_Zeme/km_na_px*0.3
+    y = math.radians(sirka)*polomer_Zeme/km_na_px*0.3
+    
+    print("Souřadnice vybraného bodu v mapě jsou: [",x,",",y,"]")
+
+#Funkce, která vypočítá souřadnice zvoleného bodu na mapě v Lambertově kuželovém zobrazení
 def souradnice_bodu_v_mm_lambert(sirka, delka, polomer_Zeme, meritko, km_na_px):
     if delka >= 0:
         if delka <= 120:
@@ -114,6 +121,11 @@ def souradnice_bodu_v_mm_lambert(sirka, delka, polomer_Zeme, meritko, km_na_px):
     else:
         exit("Byla zadána neplatná zeměpisná délka")
 
+    if sirka >= -90 and sirka <= 90:
+        r = (2*polomer_Zeme*math.sin(math.radians(90-sirka)/2)/math.cos(math.radians(30))/km_na_px)*0.3
+    else:
+        exit("Byla zadána neplatná zeměpisná šířka")
+    print("Souřadnice bodu v mapě jsou od středu pod úhlem", uhel, "° a ve vzdálenosti", r, "mm")
 
 #Funkce, která umožňuje zadávání vstupních hodnot vybraných zobrazení
 def vyber_zobrazeni():
@@ -150,6 +162,7 @@ def vyber_zobrazeni():
         souradnice_bodu_v_mm_postel(sirka, delka, polomer_Zeme, meritko, km_na_px)
         postel(polomer_Zeme, meritko, km_na_px)
     elif projection == "Ma":
+        souradnice_bodu_v_mm_marin(sirka, delka, polomer_Zeme, meritko, km_na_px)
         marin(polomer_Zeme, meritko, km_na_px)
     elif projection == "Lk":
         souradnice_bodu_v_mm_lambert(sirka, delka, polomer_Zeme, meritko, km_na_px)
